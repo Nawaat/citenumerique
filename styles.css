@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -174,6 +173,10 @@ body {
     background: #f8f9fa;
 }
 
+.creation{
+    padding: 150px 0;
+}
+
 .strategic-location h2 {
     font-size: 36px;
     font-weight: 300;
@@ -245,6 +248,132 @@ body {
     margin-bottom: 10px;
 }
 
+/* Pro Working Section */
+.pro-working {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.highlight-tag {
+    display: inline-block;
+    background: #ffeb3b;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.services-list {
+    margin: 30px 0;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    margin-top: 10px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px; /* Ajoute un espace entre les boutons */
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center;
+}
+
+.outline-button {
+    display: inline-block;
+    border: 2px solid #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.outline-button:hover {
+    background: #333;
+    color: white;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* Destination Section */
+.destination {
+    position: relative;
+    min-height: 600px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.destination-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+
+.destination-text {
+    padding: 60px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destination-text h2 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.destination-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.destination-text p:last-of-type {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    display: inline-block;
+    background: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.contact-link:hover {
+    background: #ffd700;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .nav-list {
@@ -257,6 +386,15 @@ body {
 
     .section-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .outline-button {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -278,6 +416,10 @@ body {
 
     .transport-info, .access-info {
         grid-template-columns: 1fr;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
